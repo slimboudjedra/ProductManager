@@ -47,7 +47,7 @@ ProductManager/
 ## Voraussetzungen
 
 - .NET 10 SDK
-- Eine Entwicklungsumgebung wie Visual Studio 2026 oder Visual Studio Code
+- Visual Studio 2026 oder Visual Studio Code
 - Git
 
 ## Installation und Ausführung
@@ -55,7 +55,7 @@ ProductManager/
 Repository klonen:
 
 ```bash
-git clone https://github.com/DEIN-BENUTZERNAME/ProductManager.git
+git clone https://github.com/slimboudjedra/ProductManager.git
 cd ProductManager
 ```
 
@@ -71,7 +71,7 @@ Anwendung starten:
 dotnet run
 ```
 
-Öffne anschließend die URL, die im Terminal angezeigt wird, in deinem Browser.
+Öffne anschließend die im Terminal angezeigte URL in deinem Browser.
 
 ## Datenspeicherung
 
