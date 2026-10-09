@@ -1,0 +1,65 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Produkt löschen";
+}
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+        <div class="mb-4">
+            <h1 class="fw-bold mb-1">Produkt löschen</h1>
+            <p class="text-muted mb-0">
+                Überprüfen Sie die Informationen, bevor Sie die Löschung bestätigen.
+            </p>
+        </div>
+
+        <div class="card border-danger shadow-sm">
+            <div class="card-body p-4">
+
+                <div class="alert alert-warning" role="alert">
+                    <strong>Achtung !</strong>
+                    Sind Sie sicher, dass Sie dieses Produkt löschen möchten?
+                    Diese Aktion kann nicht rückgängig gemacht werden.
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-muted">Nom du produit</label>
+                    <p class="fw-semibold mb-0">@Model.Name</p>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-muted">Description</label>
+                    <p class="mb-0">@Model.Description</p>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label text-muted">Prix</label>
+                    <p class="fs-4 fw-bold mb-0">
+                        @Model.Price.ToString(
+                            "C2",
+                            System.Globalization.CultureInfo.GetCultureInfo("fr-FR"))
+                    </p>
+                </div>
+
+                <hr class="mb-4" />
+
+                <form asp-action="DeleteConfirmed" method="post">
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index"
+                           class="btn btn-outline-secondary">
+                            Abbrechen
+                        </a>
+
+                        <button type="submit" class="btn btn-danger">
+                            Definitiv löschen
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

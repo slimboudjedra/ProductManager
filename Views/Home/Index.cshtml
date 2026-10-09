@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Startseite";
+}
+
+<div class="py-5">
+    <div class="row align-items-center g-5">
+
+        <div class="col-12 col-lg-7">
+            <span class="badge text-bg-primary rounded-pill mb-3 px-3 py-2">
+                Produktverwaltung leicht gemacht
+            </span>
+
+            <h1 class="display-4 fw-bold mb-4">
+                Willkommen bei <span class="text-primary">ProductManager</span>
+            </h1>
+
+            <p class="lead text-muted mb-4">
+                Verwalten Sie Ihre Produkte einfach, schnell und übersichtlich.
+                Erstellen, bearbeiten und organisieren Sie Ihre Produktdaten
+                an einem zentralen Ort.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+                <a asp-controller="Products"
+                   asp-action="Index"
+                   class="btn btn-primary btn-lg">
+                    Produkte ansehen
+                </a>
+
+                <a asp-controller="Products"
+                   asp-action="Create"
+                   class="btn btn-outline-secondary btn-lg">
+                    Produkt erstellen
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 p-md-5">
+
+                    <div class="mb-4">
+                        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-3">
+                            <span class="text-primary fs-2">📦</span>
+                        </div>
+
+                        <h2 class="h4 fw-bold">Ihre Produkte im Überblick</h2>
+
+                        <p class="text-muted mb-0">
+                            Alle wichtigen Produktinformationen an einem Ort.
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="text-primary fs-4">✓</div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Produkte verwalten</h3>
+                            <p class="text-muted small mb-0">
+                                Sehen Sie alle Produkte in einer übersichtlichen Liste.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div class="text-primary fs-4">✓</div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Produktdaten bearbeiten</h3>
+                            <p class="text-muted small mb-0">
+                                Aktualisieren Sie Namen, Beschreibungen und Preise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="text-primary fs-4">✓</div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Produkte erstellen und löschen</h3>
+                            <p class="text-muted small mb-0">
+                                Verwalten Sie Ihre Produktdaten flexibel.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row g-4 mt-3 mb-4">
+
+    <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+                <h2 class="h5 fw-bold">Übersicht</h2>
+                <p class="text-muted mb-0">
+                    Finden Sie Ihre Produkte schnell und einfach.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+                <h2 class="h5 fw-bold">Einfache Bedienung</h2>
+                <p class="text-muted mb-0">
+                    Eine klare Benutzeroberfläche für die tägliche Produktverwaltung.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+                <h2 class="h5 fw-bold">Responsive Design</h2>
+                <p class="text-muted mb-0">
+                    Nutzen Sie die Anwendung auf dem Desktop, Tablet oder Smartphone.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
